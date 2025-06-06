@@ -1,8 +1,23 @@
-.contact {
-    background-color: rgb(122, 113, 115);
+
+body#contact {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
 }
 
-.btn-outline {
-    background-color: rgb(255, 255, 255);
-    border-color: rgb(0, 0, 0);
+
+.bg-feedback {
+    background-color: #7a7173;
+}
+
+
+.btn-outline-dark {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.btn-outline-dark:hover {
+    background-color: black;
+    color: white;
 }
