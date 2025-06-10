@@ -71,11 +71,10 @@ body.night {
     
 }
 
-
 .logo {
     display: flex;
-    width: 250px;
-    height: 250px;
+    width: 20%;
+    height: 20%;
     margin: 0 auto;
 }
 
@@ -84,14 +83,14 @@ body.night {
   background-size: cover;
   background-position: center;
   width: 100%;
-  min-height: 300px;    /* Set a minimum height */
-  height: 40vh;         /* Responsive height */
+  min-height: 300px;    
+  height: 40vh;         
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 0;      /* Optional: vertical padding */
-  border-radius: 16px;  /* Optional: rounded corners */
-  margin-bottom: 2rem;  /* Space below hero */
+  padding: 2rem 0;      
+  border-radius: 16px; 
+  margin-bottom: 2rem;  
 }
 
 
@@ -137,9 +136,8 @@ body {
   border-radius: 10px;
 }
 
-/* Carousel wrapper for smaller size and margins */
 .carousel-wrapper {
-    max-width: 600px;      /* Adjust width as needed */
-    margin: 40px auto;     /* Top/bottom 40px, left/right auto-center */
-    padding: 0 20px;       /* Optional: inner space on left/right */
+    max-width: 600px;      
+    margin: 40px auto;    
+    padding: 0 20px;       
 }
