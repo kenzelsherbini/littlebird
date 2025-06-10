@@ -1,76 +1,52 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+<head>
+    <title>Feedback</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body id="contact">
+    <main class="container-fluid py-5 bg-light">
+        <div class="row justify-content-center align-items-center min-vh-100">
+            <div class="col-md-8">
+                <div id="feedback-card" class="row g-5 shadow-lg rounded overflow-hidden">
+                    <!-- Feedback Form -->
+                    <div class="col-md-6 bg-feedback text-white p-4 d-flex flex-column justify-content-center">
+                        <h2>Send Feedback Here!</h2>
+                        <p>Please let us know your thoughts below. Your feedback matters!</p>
+                        <form id="feedback-form">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="feedback" class="form-label">Your Feedback</label>
+                                <textarea class="form-control" id="feedback" rows="5" placeholder="Write your feedback here..." required></textarea>
+                            </div>
+                            <button type="button" id="send-button" class="btn btn-outline-dark mt-2">Send!</button>
+                        </form>
+                    </div>
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
+                    <!-- Right Card with Image -->
+                    <div class="col-md-6 d-flex justify-content-center align-items-center p-4 bg-white">
+                        <img src="imgs/croplogo.png" class="img-fluid rounded shadow-sm" alt="Logo">
+                    </div>
+                </div>
 
-        <link rel="stylesheet" href="contact.css">
-    </head>
-
-    <body id="contact">
-        <header>
-            <!-- place navbar here -->
-        </header>
-        <main class="container-fluid py-5 bg-light">
-  <div class="row justify-content-center align-items-center min-vh-100">
-    <div class="col-md-8">
-      <div class="row g-5 shadow-lg rounded overflow-hidden">
-
-        <!-- Left Card with Background -->
-        <div class="col-md-6 bg-feedback text-white p-4 d-flex flex-column justify-content-center">
-          <h2>Send Feedback Here!</h2>
-          <p>Please let us know your thoughts below. Your feedback matters!</p>
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Your Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                <!-- Thank You Message -->
+                <div id="thank-you-card" class="row g-5 shadow-lg rounded overflow-hidden bg-white text-center p-5 d-none">
+                    <h2>Thank You for Your Feedback!</h2>
+                    <p>We appreciate you taking the time to provide your thoughts.</p>
+                </div>
             </div>
-            <div class="mb-3">
-              <label for="feedback" class="form-label">Your Feedback</label>
-              <textarea class="form-control" id="feedback" rows="5" placeholder="Write your feedback here..."></textarea>
-            </div>
-            <a href="home.html" class="btn btn-outline-dark mt-2">Send!</a>
-          </form>
         </div>
+    </main>
 
-        <!-- Right Card with Image -->
-        <div class="col-md-6 d-flex justify-content-center align-items-center p-4 bg-white">
-          <img src="imgs/croplogo.png" class="img-fluid rounded shadow-sm" alt="Logo">
-        </div>
-
-      </div>
-    </div>
-  </div>
-</main>
-
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-        <script src="server.js"></script>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="script.js">
+        
+    </script>
+</body>
 </html>

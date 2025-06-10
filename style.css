@@ -83,8 +83,15 @@ body.night {
   background-image: url('imgs/hero.png');
   background-size: cover;
   background-position: center;
-  height: 45vh; 
   width: 100%;
+  min-height: 300px;    /* Set a minimum height */
+  height: 40vh;         /* Responsive height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;      /* Optional: vertical padding */
+  border-radius: 16px;  /* Optional: rounded corners */
+  margin-bottom: 2rem;  /* Space below hero */
 }
 
 
@@ -128,4 +135,11 @@ body {
 .about-image {
   max-width: 300px;
   border-radius: 10px;
+}
+
+/* Carousel wrapper for smaller size and margins */
+.carousel-wrapper {
+    max-width: 600px;      /* Adjust width as needed */
+    margin: 40px auto;     /* Top/bottom 40px, left/right auto-center */
+    padding: 0 20px;       /* Optional: inner space on left/right */
 }
