@@ -153,7 +153,7 @@ body {
 }
 
 
-.image {
+.dimage {
   display: block;
   width: 100%;
   height: auto;
@@ -187,9 +187,7 @@ body {
   overflow: hidden;
 }
 
-
-
-.container .image {
+.container .dimage {
   display: block;
   width: 100%;
   height: auto;
@@ -221,7 +219,7 @@ body {
 @media only screen and (max-width: 768px) {
   .container .text {
     font-size: 14px;
-    color: white;
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -232,7 +230,6 @@ body {
 @media only screen and (max-width: 576px) {
   .container .text {
     font-size: 12px;
-    color: white;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -241,7 +238,7 @@ body {
 }
 
 
-.container:hover .image {
+.container:hover .dimage {
   transform: scale(0.9);
 }
 
