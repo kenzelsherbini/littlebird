@@ -80,21 +80,18 @@ body.night {
 
 .hero-section {
   background-image: url('imgs/hero.png');
-  background-size: cover;
+  background-size: cover;        /* Back to original: fills area, may crop */
   background-position: center;
   width: 100%;
-  min-height: 300px;    
-  height: 40vh;         
+  min-height: 300px;
+  height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 0;      
-  border-radius: 16px; 
-  margin-bottom: 2rem;  
+  padding: 2rem 0;
+  border-radius: 16px;
+  margin-bottom: 2rem;
 }
-
-
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -136,8 +133,120 @@ body {
   border-radius: 10px;
 }
 
-.carousel-wrapper {
-    max-width: 600px;      
-    margin: 40px auto;    
-    padding: 0 20px;       
+
+
+
+/*display img hover styling*/
+.text {
+  color: #262626;
+  font-family: "komet", sans-serif;
 }
+
+.albums {
+  margin-bottom: 20%;
+  padding-bottom: 10%;
+}
+
+#rotate:hover {
+  transition-duration: 2s;
+  transform: rotate(360deg);
+}
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.container {
+  width: 20%;
+  height: auto;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+
+
+.container .image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.container .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.container:hover .image {
+  transform: scale(0.9);
+}
+
+.container:hover .overlay {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 768px) {
+  .container .text {
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container .text {
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+.container:hover .image {
+  transform: scale(0.9);
+}
+
+.container:hover .overlay {
+  opacity: 0.5;
+}
+/*finish*/
+
