@@ -64,14 +64,19 @@ body.night {
 
 .navbar{
     width: 100%;
+    background-color: #b17a51;
 }
 .navbar-brand {
     margin-left: 20px;
     font-size: 60px;
+    color: #e6e3e1;
     
 }
 
-
+#navbarText{
+  font-size: 48px;
+  
+}
 .hero-section {
   background-image: url('imgs/hero.png');
   background-size: contain;      
@@ -90,7 +95,7 @@ body.night {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #d9d9d9;
+  background-color: #b17a51;
   color: #333;
 }
 
@@ -171,7 +176,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 300px;
+  max-width: 500px;
   height: auto;
   position: relative;
   justify-content: center;
@@ -250,4 +255,20 @@ body {
   opacity: 0.5;
 }
 /*finish*/
+
+/*fonts*/
+h2{
+  font-family: "coronet-script-ludlow", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 128px;
+}
+
+a{
+  font-family: "coronet-script-ludlow", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 128px;
+color: orange;
+}
 
