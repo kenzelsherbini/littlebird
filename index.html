@@ -2,29 +2,32 @@
 <html lang="en">
 
 <head>
+    <!-- Meta information -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title> Little Bird Toys</title>
 
-   
-   
-    <!-- Bootstrap (optional for splash, fine to keep) -->
+    <!-- Page title -->
+    <title>Little Bird Toys</title>
+
+    <!-- Bootstrap CSS (optional for styling) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Site stylesheet -->
+    <!-- Custom site stylesheet -->
     <link href="style.css" rel="stylesheet" />
 </head>
 
 <body>
-    <!-- Center‑everything wrapper -->
+    <!-- Landing page wrapper for centering content -->
     <div id="landing-wrapper">
-        <img id="landing-logo" src="imgs/croplogo.png"
-            alt="Bird logo" />
+        <!-- Logo image -->
+        <img id="landing-logo" src="imgs/croplogo.png" alt="Bird logo" />
+        
+        <!-- Greeting message (dynamically updated via JavaScript) -->
         <h1 id="greeting"></h1>
     </div>
 
     <script>
-        /* Time‑of‑day greeting + 5‑second redirect */
+        // Array of greetings based on the time of day
         const greetings = [
             { start: 5, end: 11, text: "Good morning", cls: "morning" },
             { start: 11, end: 17, text: "Good afternoon", cls: "afternoon" },
@@ -33,15 +36,21 @@
             { start: 0, end: 5, text: "Good night", cls: "night" }
         ];
 
+        // Execute this function when the DOM is fully loaded
         window.addEventListener("DOMContentLoaded", () => {
+            // Get the current hour
             const hr = new Date().getHours();
+
+            // Find the appropriate greeting based on the current time
             const g = greetings.find(({ start, end }) => hr >= start && hr < end);
 
-            /* Apply background & text colors via CSS class */
+            // Apply a background & text color class to the body
             document.body.classList.add(g.cls);
+
+            // Update the greeting text
             document.getElementById("greeting").textContent = g.text;
 
-            /* Redirect to home page after 5 s */
+            // Redirect to the home page after 5 seconds
             setTimeout(() => window.location.replace("home.html"), 5000);
         });
     </script>
