@@ -1,7 +1,7 @@
 /* Root variables for colors */
 :root {
     --Logo-orange: #cc6d00;
-    --Logo-yellow: rgb(214, 183, 10);
+    --Logo-yellow: rgb(202, 175, 20);
     --Logo-brown: #462d10;
 }
 
@@ -56,95 +56,53 @@ body.evening, body.night {
     color: #fff;
 }
 
-/* General body styling */
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #fdf6f0;
-    color: #4a3f35;
-}
+ body {
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-
-
-
-/* Navbar styling */
-.navbar {
-    background-color: #fff5ea;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.navbar-brand {
-    font-size: 28px;
-    font-weight: bold;
-    color: #db6d18;
-    font-family: 'Georgia', serif;
-}
-
-.nav-link {
-    font-size: 14px;
-    margin: 0 12px;
-    color: #6b4e3d;
-    transition: all 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #db6d18;
-    text-decoration: underline;
-}
-
-/* Hero section styling */
-.hero-section {
-    background-image: url('imgs/hero.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* About section styling */
-.about {
-    background: #fff2e6;
-    padding: 80px 20px;
-    border-top: 10px solid #db6d18;
-    border-bottom: 10px solid #db6d18;
-}
-
-.about h2 {
-    font-family: "coronet-script-ludlow", sans-serif;
-    font-size: 96px;
-    color: #b85c00;
-    margin-bottom: 50px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.about-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    padding: 0 20px;
-}
-
-.text-block {
-    max-width: 300px;
-    background-color: #fff;
-    padding: 25px;
-    border-radius: 18px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-    font-size: 16px;
-    color: #4a3f35;
-    line-height: 1.6;
-}
-
-.about-image {
-    max-width: 300px;
-    border-radius: 20px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-}
+    .hero {
+      background: url('imgs/alternate-logo.png') no-repeat center center/contain;
+      background-color:#ff7a00;
+;
+      color: #ffffff;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+      position: relative;
+    }
+    .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .section-title {
+      text-align: center;
+      margin: 60px 0 20px;
+      font-weight: bold;
+    }
+    .stats {
+      background-color: #f8f9fa;
+      padding: 40px 0;
+    }
+    .stats .stat {
+      text-align: center;
+    }
+    .btn-orange {
+      background-color: #ff7a00;
+      color: white;
+    }
+    .btn-orange:hover {
+      background-color: #e56600;
+    }
 
 /* Features Section */
 .dimage {
@@ -161,6 +119,19 @@ body {
     text-align: center;
     font-size: 14px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Make about section images smaller */
+.about-section img.img-fluid,
+.row.align-items-center img.img-fluid {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Responsive tweaks */
@@ -207,25 +178,7 @@ body {
     font-size: 48px;
 }
 
-.container {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    overflow: hidden;
-}
 
-.row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin: 0 auto;
-}
 
 .container:hover .dimage {
     transform: scale(0.9);
@@ -258,7 +211,7 @@ body {
 
 /* Font styles */
 h2 {
-    font-family: "coronet-script-ludlow", sans-serif;
+    
     font-weight: 700;
     font-style: normal;
     font-size: 128px;
@@ -276,3 +229,22 @@ b {
        font-weight: 700;
     font-style: normal;
     }
+
+/* Social icons in stats section */
+.social-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #eee;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: transform 0.2s;
+  background: #fff;
+  display: block;
+  margin: 0 auto;
+}
+
+.social-icon:hover {
+  transform: scale(1.08);
+  border-color: #ffb23e;
+}
