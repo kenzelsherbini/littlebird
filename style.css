@@ -56,9 +56,10 @@ body.evening, body.night {
     color: #fff;
 }
 
- body {
-      font-family: 'Segoe UI', sans-serif;
-    }
+
+
+
+
 
     .hero {
      
@@ -130,22 +131,6 @@ body.evening, body.night {
 
 
 
-    .navbar-brand {
-        font-size: 22px;
-    }
-
-    .nav-link {
-        font-size: 12px;
-        margin: 5px;
-    }
-
-    .text-block {
-        max-width: 100%;
-    }
-}
-
-
-
 
 /* Font styles */
 h2 {
@@ -159,17 +144,6 @@ font-weight: 400;
 font-style: normal;
 }
 
-b {
-  
-    font-weight: 700;
-    font-style: normal;
-    font-size: 18px;
-    color: rgb(197, 111, 61);
-}
-    a {font-family: "coronet-script-ludlow", sans-serif;
-       font-weight: 700;
-    font-style: normal;
-    }
 
 /* Social icons in stats section */
 .social-icon {
@@ -286,3 +260,20 @@ b {
 .card-body select:hover {
   background-color: #ff7a25;
 }
+
+    .navbar {
+        background-color: #4f3b3a;
+      }
+
+      .navbar-nav .nav-link {
+        color: #f18826 !important;
+        font-weight: 500;
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: white !important;
+      }
+
+      .navbar-collapse {
+        justify-content: center;
+      }
