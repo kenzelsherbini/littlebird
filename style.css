@@ -58,15 +58,8 @@ body.evening, body.night {
 
 
 
-
-
-body{
-  background-color:#7f4722 ;
-}
     .hero {
-     
-      background-color:#ff7a00;
-;
+      background-color:#ff7a00 ;
       color: #ffffff;
       min-height: 90vh;
       display: flex;
@@ -117,7 +110,6 @@ body{
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Make about section images smaller */
 .about-section img.img-fluid,
 .row.align-items-center img.img-fluid {
     max-width: 220px;
@@ -131,9 +123,6 @@ body{
 }
 
 
-
-
-/* Font styles */
 h2 {
     
     font-weight: 700;
@@ -261,7 +250,7 @@ font-style: normal;
 }
 
     .navbar {
-        background-color: #4f3b3a;
+        background-color: #ffffff;
       }
 
       .navbar-nav .nav-link {

@@ -2,45 +2,21 @@
 const modalContainer = document.createElement("div");
 
 modalContainer.innerHTML = `
-
   <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
-
     <div class="modal-dialog">
-
       <div class="modal-content">
-
-        <!-- Modal Header -->
-
         <div class="modal-header">
-
           <h5 class="modal-title" id="productModalLabel">Product Details</h5>
-
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-
         </div>
-
-        <!-- Modal Body (content added dynamically) -->
-
         <div class="modal-body" id="modalBody">
-
-          <!-- Content will be dynamically updated -->
-
         </div>
-
-        <!-- Modal Footer -->
-
         <div class="modal-footer">
-
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
         </div>
-
       </div>
-
     </div>
-
   </div>
-
 `;
 
 
@@ -124,25 +100,12 @@ function renderPlayers(list, rowElement, indexOffset) {
 
     const p = list[i];
 
-    const globalIndex = indexOffset + i; // Unique index for element IDs
-
-
-
-    // Create a card container
-
+    const globalIndex = indexOffset + i; 
     const card = document.createElement("div");
 
     card.className = "card";
 
-
-
-    // Use the first image from the photo list for the card preview
-
     const photo = p.photos[0];
-
-
-
-    // Define the card's inner HTML
 
     card.innerHTML = `
 
@@ -153,11 +116,6 @@ function renderPlayers(list, rowElement, indexOffset) {
       <div class="card-body">
 
         <p>Price: $<span id="price-${globalIndex}">${p.price}</span></p>
-
-
-
-        <!-- Quantity selection dropdown -->
-
         <label for="qty-${globalIndex}">Quantity:</label><br />
 
         <select id="qty-${globalIndex}" style="width: 60%; margin: 0 auto;">
@@ -174,10 +132,6 @@ function renderPlayers(list, rowElement, indexOffset) {
 
         </select>
 
-
-
-        <!-- Button to open modal with more info -->
-
         <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#productModal" id="more-info-${globalIndex}">
 
           More Info
@@ -188,9 +142,6 @@ function renderPlayers(list, rowElement, indexOffset) {
 
     `;
 
-
-
-    // Append card to the row container
 
     rowElement.appendChild(card);
 
@@ -213,8 +164,6 @@ function renderPlayers(list, rowElement, indexOffset) {
       const modalBody = document.getElementById("modalBody");
 
 
-
-      // Populate modal body with product details and thumbnails
 
       modalBody.innerHTML = `
 
@@ -252,10 +201,8 @@ function renderPlayers(list, rowElement, indexOffset) {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  const row1 = document.getElementById("row1"); // First row container
-  const row2 = document.getElementById("row2"); // Second row container
-
-  // Render both rows, keeping track of index offsets to avoid ID conflicts
+  const row1 = document.getElementById("row1"); 
+  const row2 = document.getElementById("row2");
   renderPlayers(firstRowPlayers, row1, 0);
   renderPlayers(secondRowPlayers, row2, firstRowPlayers.length);
 });
