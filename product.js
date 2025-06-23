@@ -56,7 +56,7 @@ const firstRowPlayers = [
 
     price: 25,
 
-    photos: ["imgs/boat1.jpg", "imgs/boat2.jpg", "imgs/boat3.jpg"],
+    photos: ["imgs/boat1.jpg", "imgs/boat2.jpg", "imgs/boat1.jpg"],
 
   },
 
@@ -64,37 +64,7 @@ const firstRowPlayers = [
 
     firstName: "Wooden",
 
-    lastName: "Blocks",
-
-    price: 40,
-
-    photos: ["imgs/block1.jpg", "imgs/block2.jpg", "imgs/block3.jpg"],
-
-  },
-
-  {
-
-    firstName: "Wooden",
-
-    lastName: "Car",
-
-    price: 45,
-
-    photos: ["imgs/car1.jpg", "imgs/car2.jpg", "imgs/car3.jpg"],
-
-  }
-
-];
-
-
-
-// Second row of products
-
-const secondRowPlayers = [
-
-  {
-
-    firstName: "Wooden",
+    
 
     lastName: "Plane",
 
@@ -106,13 +76,43 @@ const secondRowPlayers = [
 
   {
 
-    firstName: "Igor",
+    firstName: "Wooden",
 
-    lastName: "Shesterkin",
+    lastName: "Train",
 
     price: 25,
 
-    photos: ["imgs/train2.jpg", "imgs/train1.jpg", "imgs/train5.jpg"],
+    photos: ["imgs/train2.jpg", "imgs/train1.jpg", "imgs/train4.jpg"],
+  }
+];
+
+
+
+// Second row of products
+
+const secondRowPlayers = [
+
+  {
+    firstName: "Wooden",
+
+    lastName: "Blocks",
+
+    price: 40,
+
+    photos: ["imgs/block1.jpg", "imgs/block2.jpg",],
+
+  },
+
+  {
+
+     firstName: "Wooden",
+
+    lastName: "Car",
+
+    price: 45,
+
+    photos: ["imgs/car1.jpg", "imgs/car2.jpg", "imgs/car3.jpg"],
+    
 
   }
 
