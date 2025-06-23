@@ -1,31 +1,31 @@
 const topReviews = [
   {
-    name: "Emily R.",
+    name: "Harper J.",
     role: "⭐⭐⭐⭐⭐",
-    message: "Absolutely love this! The quality is amazing and the service was top notch. "
+    message: "The craftsmanship is beautiful and my kids adore their new toys. Highly recommend!"
   },
   {
-    name: "Sofia L.",
+    name: "Lucas P.",
     role: "⭐⭐⭐⭐⭐",
-    message: "Everything was perfect — the packaging, the product, and the support! "
+    message: "Wonderful experience from start to finish. The toys are sturdy and safe."
   },
   {
-    name: "Ben T.",
+    name: "Ava S.",
     role: "⭐⭐⭐⭐⭐",
-    message: "Seriously impressed with how smooth and professional everything was. "
+    message: "Customer service was so friendly and helpful. The packaging was adorable too!"
   }
 ];
 
 const bottomReviews = [
   {
-    name: "Rachel M.",
+    name: "Mason W.",
     role: "⭐⭐⭐⭐⭐",
-    message: "Incredible experience! Will definitely be coming back for more. "
+    message: "These toys are truly heirloom quality. I’ll be buying more for gifts!"
   },
   {
-    name: "Noah K.",
+    name: "Ella K.",
     role: "⭐⭐⭐⭐⭐",
-    message: "Fast, friendly, and flawless. Highly recommend to anyone. "
+    message: "Fast shipping and the toys exceeded my expectations. Thank you Little Bird!"
   }
 ];
 
